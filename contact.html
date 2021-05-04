@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Indigo Tango Technologies</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/contact.css">
+    <!-- Favicon -->
+    <link rel="icon" href="icon.png">
+    <!-- Fonts Google -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700;800&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
+</head>
+<body>
+    <header>
+        <a href="index.html"><img class="logo" src="images/logo.png" alt="Indigo Tango Technologies logo"></a>
+        <ul class="navigation" id="navigation">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="index.html#about">About Us</a></li>
+            <li><a href="index.html#values">Our Values</a></li>
+            <li><a href="index.html#testimony">Testimonies</a></li>
+            <li><a href="product.html">Our Products</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <!-- Mobile Toggle -->
+        <img class="menu-bar" src="images/menu.png" onclick="toggleMenu()" alt="">
+    </header>
+
+    
+
+    <!-- Contact  -->
+    <section id="contact">
+        <div class="heading">
+            <h2>contact us</h2>
+        </div>
+        <div class=" container contact-form">
+            <form name="contactForm" onsubmit="return validation();" action="mail.php" class="contact-form" method="POST">
+                <input id="fname" name="first_name" class="contact-form-text" type="text" placeholder="First Name" required>
+                <input id="lname" name="last_name" class="contact-form-text" type="text" placeholder="Last Name" required>
+                <input id="phone" name="phone" class="contact-form-text" type="number" placeholder="Phone number" required>
+                <input id="email" name="email" class="contact-form-text" type="email" placeholder="Email" required>
+                <textarea id="questions" name="questions" class="contact-form-text" placeholder="Questions" required></textarea>
+                <button name="submit" type="submit" value="Submit" class="btn-banner btn-submit">Submit</button>
+            </form>
+        </div>
+    </section>
+    <section class="footer">
+        <div class="footer-wrapper">
+            <div class="logo-indiego">
+                <img class="logo" src="images/logo.png" alt="logo">
+            </div>
+            
+            <div class="address">
+                <p><strong>Indiego Tango Technologies</strong></p>
+                <br>
+                <p>Address Line1<br>
+                    Town/City<br>
+                    Postcode/Zip<br>
+                    Tel: 123 4567890<br>
+                    Fax: 000 000 0000</p>
+            </div>
+            <div class="opening">
+                <p><strong>Opening Times&colon;</strong></p>
+                <br>
+                <p>Monday - Friday: 8:00 - 6:00<br>
+                    Tuesday: 8:00 - 8:00<br>
+                    Saturday: 9:00 - 3:00<br>
+                    Sunday: 9:00 - 12:00<br>
+                    Holiday: Closed</p>
+            </div>
+            <div class="social-icons">
+                <p><strong>Follow Us&colon;</strong></p>
+                <br>
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+                <a href="#"><i class="fab fa-twitter-square"></i></i></a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; Indiego Tango Technologies &#x002DC; All Rights Reserved</p>
+    </footer>
+    <script src="js/script.js"></script>
+</body>
+</html>
